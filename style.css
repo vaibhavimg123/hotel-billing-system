@@ -1,0 +1,40 @@
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f4f4f4;
+}
+
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;
+}
+
+input, select, button {
+  margin: 5px 0;
+  padding: 8px;
+  width: 100%;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+table {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
