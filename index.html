@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hotel Billing System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>🏨 Hotel Billing System</h2>
+
+<div class="container">
+
+  <h3>Customer Details</h3>
+  <input type="text" id="customerName" placeholder="Customer Name">
+  <input type="number" id="days" placeholder="Number of Days">
+
+  <select id="roomType">
+    <option value="1000">Standard - ₹1000</option>
+    <option value="2000">Deluxe - ₹2000</option>
+    <option value="3000">Suite - ₹3000</option>
+  </select>
+
+  <h3>Add Food Item</h3>
+  <input type="text" id="itemName" placeholder="Item Name">
+  <input type="number" id="itemPrice" placeholder="Price">
+  <input type="number" id="itemQty" placeholder="Qty">
+  <button onclick="addItem()">Add</button>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Price</th>
+        <th>Qty</th>
+        <th>Total</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="cartTable"></tbody>
+  </table>
+
+  <input type="number" id="discount" placeholder="Discount (%)">
+
+  <button onclick="generateBill()">Generate Bill</button>
+  <button onclick="printBill()">Print</button>
+  <button onclick="showBills()">View Previous Bills</button>
+
+  <div id="billOutput"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
